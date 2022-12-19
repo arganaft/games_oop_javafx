@@ -5,7 +5,7 @@ public class Win {
         return (isColumnAssembled(board) || isLineAssembled(board));
     }
 
-    public static boolean isLineAssembled (int[][] board) {
+    public static boolean isLineAssembled(int[][] board) {
         boolean result = false;
         for (int row = 0; row < board.length; row++) {
             for (int cell = 0; cell < board.length; cell++) {
@@ -17,14 +17,14 @@ public class Win {
                     result = true;
                 }
             }
-            if (result){
+            if (result) {
                 break;
             }
         }
         return result;
     }
 
-    public static boolean isColumnAssembled (int[][] board) {
+    public static boolean isColumnAssembled(int[][] board) {
         boolean result = false;
         for (int cell = 0; cell < board.length; cell++) {
             for (int row = 0; row < board.length; row++) {
@@ -36,7 +36,7 @@ public class Win {
                     result = true;
                 }
             }
-            if (result){
+            if (result) {
                 break;
             }
         }
