@@ -8,7 +8,7 @@ public class Win {
     public static boolean isLineAssembled(int[][] board) {
         boolean result = false;
         for (int row = 0; row < board.length; row++) {
-            for (int cell = 0; cell < board.length; cell++) {
+            for (int cell = 0; cell < board.length;  cell++) {
                 if (board[row][cell] == 0) {
                     result = false;
                     break;
