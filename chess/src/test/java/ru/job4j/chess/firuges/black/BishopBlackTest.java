@@ -23,8 +23,11 @@ class BishopBlackTest {
 
     @Test
     void copy() {
-        Figure bishopBlack = new BishopBlack(Cell.C8);
-        assertThat(new BishopBlack(Cell.E6).position()).isEqualTo(bishopBlack.copy(Cell.E6).position());
+        Cell start = Cell.C8;
+        Figure bishopBlack = new BishopBlack(start);
+        Cell finish = Cell.E6;
+        Cell finishPosition = bishopBlack.copy(finish).position();
+        assertThat(finish).isEqualTo(finishPosition);
     }
 
     @Test
